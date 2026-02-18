@@ -67,4 +67,4 @@ Models used inside ensemble:
 - Support Vector Machine
 - K-Nearest Neighbors
 
-'''ensemble = VotingClassifier(estimators)'''
+''' ensemble = VotingClassifier(estimators) '''
