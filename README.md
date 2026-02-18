@@ -26,7 +26,7 @@ Organizations require an automated solution to:
 This project builds an intelligent text classification system capable of automatically assigning category labels to incoming news articles.
 
 ## Methodology:
-### Stage 1 — Baseline NLP Classification (main.ipynb)
+### _Stage 1 — Baseline NLP Classification (main.ipynb)_
 ### 1) Data Preprocessing
 Performed a complete text cleaning pipeline:
 - Tokenization
