@@ -27,7 +27,7 @@ This project builds an intelligent text classification system capable of automat
 
 ## Methodology:
 ### Stage 1 — Baseline NLP Classification (main.ipynb)
-**1) Data Preprocessing**
+### 1) Data Preprocessing
 Performed a complete text cleaning pipeline:
 - Tokenization
 - Lowercasing
