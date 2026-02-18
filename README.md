@@ -1,27 +1,37 @@
-# Predictive-Model-using-Word-Cloud
+## Title:
 
-1. Theoretical Background:
-In this fast-paced world, people prefer to have the required information at 
-their fingertips. News being the most popular way of starting a day and 
-getting know-how of everything around the world makes it very important 
-for the media to keep up with the speed in order to be the most popular media. 
-Categorizing news articles allows the reader only to pursue the articles of 
-their choice and avoids any time wasted in searching and browsing.
+News Article Classification using NLP and Ensemble Machine Learning
 
-3.  Motivation:
-Most projects done in this domain limit themselves to categorizing news as 
-fake and genuine or generating a synopsis of the news while this project is based 
-on a more pressing issue of making news faster to access and also suit the 
-the palette of the reader.
+## Executive Summary:
 
-3. Aim of the Proposed Work:
-The project aims to compare the accuracies of the existing models in predicting 
-the new paper categories from among the following: World, Sports, Business 
-and Sci/Tech and find the most accurate match.
+This project builds an end-to-end Natural Language Processing (NLP) pipeline to automatically classify news articles into multiple categories (World, Sports, Business, Science). The system processes raw textual data, converts it into numerical features using TF-IDF vectorization, and trains several machine learning classifiers to predict article categories.
 
-4. Objective of the Proposed Work:
-The project compares the accuracy of the following algorithms in predicting 
-the news article category from among(World, Sports, Business and Sci/Tech):
-Logistic Regression, Multinomial Naive Bayes, Decision Tree Classifier, Gaussian Naive Bayes and Ensemble Model.
+The project is implemented in two stages. The first stage develops baseline classification models and evaluates their performance. The second stage improves prediction accuracy by combining multiple models using an ensemble voting classifier. The final system demonstrates how ensemble learning can significantly enhance text classification performance compared to individual models.
 
-The most accurate model is then decided upon.
+## Business Problem:
+
+Large news platforms and content aggregators receive thousands of articles daily. Manual categorization creates several issues:
+- Time-consuming editorial work
+- Inconsistent tagging
+- Delayed publishing pipelines
+- Poor recommendation accuracy
+
+Organizations require an automated solution to:
+
+- Categorize incoming articles instantly
+- Improve search and recommendation systems
+- Reduce manual moderation effort
+- Enable real-time content organization
+
+This project builds an intelligent text classification system capable of automatically assigning category labels to incoming news articles.
+
+## Methodology:
+### Stage 1 — Baseline NLP Classification (main.ipynb)
+##### 1) Data Preprocessing
+Performed a complete text cleaning pipeline:
+- Tokenization
+- Lowercasing
+- Punctuation removal
+- Number removal
+- Stopword removal
+- Lemmatization
