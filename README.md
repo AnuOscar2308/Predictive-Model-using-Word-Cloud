@@ -68,3 +68,25 @@ Models used inside ensemble:
 - K-Nearest Neighbors
 
 ``` ensemble = VotingClassifier(estimators) ```
+The ensemble aggregates predictions from all models and outputs the final category.
+
+### Skills:
+- **Natural Language Processing:** Text preprocessing, Lemmatization, Tokenization, Stopword filtering
+- **Machine Learning:** Classification modelling, Model evaluation, Ensemble learning, Voting classifier
+- **Feature Engineering:** TF-IDF Vectorization
+- **Python Libraries:** Scikit-learn, NLTK, Pandas, Seaborn, Matplotlib
+- **Data Science Concepts:** Model comparison, Bias-variance improvement, Confusion matrix interpretation
+
+### Results
+- Baseline models successfully classified news categories
+- Performance improved significantly after ensemble learning
+- The ensemble classifier provided more stable and reliable predictions compared to individual models
+
+### Business Recommendation
+Content platforms should deploy ensemble-based classifiers instead of single models because:
+- Higher accuracy
+- More robust predictions
+- Reduced misclassification
+- Better recommendation quality
+
+This system can be integrated into content pipelines to automatically organize articles in real time.
