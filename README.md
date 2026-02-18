@@ -35,3 +35,36 @@ Performed a complete text cleaning pipeline:
 - Number removal
 - Stopword removal
 - Lemmatization
+
+### 2) Feature Engineering
+Converted text into numerical vectors using:
+TF-IDF Vectorizer
+- max_features = 10,000
+- min_df = 6
+
+### 3) Models Trained
+
+Multiple classification algorithms were trained and evaluated:
+- Multinomial Naive Bayes
+- Decision Tree
+- Gaussian Naive Bayes
+- Logistic Regression
+
+Evaluation Metrics:
+- Accuracy
+- F1 Score
+- Confusion Matrix
+
+### _Stage 2 — Ensemble Learning (ensemble model.ipynb)_
+
+To improve performance, multiple models were combined into a hybrid system.
+
+### Ensemble Voting Classifier
+
+Models used inside ensemble:
+- Logistic Regression
+- Decision Tree
+- Support Vector Machine
+- K-Nearest Neighbors
+
+'''ensemble = VotingClassifier(estimators)'''
